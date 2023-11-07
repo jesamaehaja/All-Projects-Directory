@@ -8,6 +8,8 @@ This repository serves as a directory that helps you easily navigate through our
 - HTML Tags
 ### Act2
 - Updating of repository and linking of pages
+### Act3
+- CSS Proprties
 ## Members
 👩Balangbang, Ivy L. 
 - GitHub Account: IvyBalangbang

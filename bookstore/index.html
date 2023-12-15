@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Book Store </title>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-right">
+            <li><a href="#index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="featured_products.html">Featured Products</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="register.html">Create Account</a></li>
+        </div>
+    </nav>
+
+    <div class="section-1">
+        <div class="Section-1-text">
+            <center><h1>Welcome to Book Raiders</h1>
+            <p>You can find out yours book here.</p>
+            <a href="products.html" class="btn">Explore Here >>  <i class="fa fa-arrow-right" aria-hidden="true"></i> </a>
+            </center>
+        </div>
+    </div>
+    
+    <div class="section-3">
+        
+              <h2>Contact Us</h2>
+              <h3>leave us a message or suggestion</h3>
+
+              <div class="column">
+                <form action="index.html">
+                  <label for="fname">First Name</label>
+                  <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                  <label for="lname">Last Name</label>
+                  <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                  <label for="country">Country</label>
+                  <select id="country" name="country">
+                    <option value="india">India</option>
+                    <option value="australia">Australia</option>
+                    <option value="canada">Canada</option>
+                    <option value="usa">USA</option>
+                    <option value="philippines">Philippines</option>
+                    <option value="malaysia">Malaysia</option>
+                    <option value="japan">Japan</option>
+
+                  </select>
+                  <label for="message">Message</label>
+                  <textarea id="message" name="message" placeholder="Write something.." style="height:170px"></textarea>
+                  <input type="submit" value="Submit">
+                </form>
+              </div>
+    </div>
+    <script>
+      function validateForm(event) {
+          event.preventDefault(); 
+  
+          var firstName = document.getElementById('fname').value;
+          var lastName = document.getElementById('lname').value;
+          var country = document.getElementById('country').value;
+          var message = document.getElementById('message').value;
+
+          if (firstName.trim() === '') {
+              alert('First Name cannot be empty!');
+              return;
+          }
+  
+          if (lastName.trim() === '') {
+              alert('Last Name cannot be empty!');
+              return;
+          }
+  
+          if (country.trim() === '') {
+              alert('Please select a country!');
+              return;
+          }
+  
+          if (message.trim() === '') {
+              alert('Message cannot be empty!');
+              return;
+          }
+  
+          alert('Form submitted successfully!');
+      }
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+.navbar{
+  display: flex;
+  background-color:rgb(60, 124, 197);
+  position: fixed;
+  top:0;
+  width: 100%;
+  font-size: 20px;
+}
+
+.nav-right{
+  text-align: right;
+  float:right;
+}
+
+.nav-right li {
+    display: inline;
+    float: left;
+    padding-left: 15px;
+}
+
+.nav-right li a {
+  display: block;
+  padding: 8px;
+  text-decoration: none;
+  color:white;
+}
+
+.nav-right  li ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+.nav-right li a:hover {
+  background-color: rgb(31, 199, 106);
+}
+
+.nav-right .active {
+  background-color: #04AA6D;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 25%; /* Adjust the width as needed */
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap; /* Allow cards to wrap to the next line on smaller screens */
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+  width: 100%; /* Adjust the width as needed */
+  height: 400px;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #474e5d;
+  color: white;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+</style>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-right">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="products.html">Products</a></li>
+      <li><a href="featured_products.html">Featured Products</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="login.html">Login</a></li>
+      <li><a href="register.html">Create Account</a></li>
+    </div>
+  </nav>
+
+  <div class="about-section">
+    <h1>About Us </h1>
+    <p>Book Raiders provides easy interface to its customer for purchasing books online.</p>
+    <p>For any query leave a comment in the Home page comment section. You can also send us email and call us 
+      on Week days. 
+      <br>Thank you for your patience and hope you had a great shopping here.
+    </p>
+  </div>
+
+  <h2 style="text-align:center">Our Team</h2>
+  <div class="row">
+
+    <div class="column">
+      <div class="card">
+        <center><img src="haja.jpg" alt="Jesamae Haja" style="width: 50%; height: auto;"></center>
+        <div class="container">
+          <h2>Jesamae Haja</h2>
+          <p class="title">CEO & Founder</p>
+          <p>“Be yourself; everyone else is already taken.”</p>
+          <p>ysa@gmail.com</p>
+          <p><button class="button">Contact</button></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="column">
+      <div class="card">
+        <center><img src="rexr.jpg" alt="Rex Raul Rebamba" style="width: 46%; height: auto;"></center>
+        <div class="container">
+          <h2>Rex Raul Rebamba</h2>
+          <p class="title">Art Director</p>
+          <p>“Two things are infinite: the universe and human stupidity; and I'm not sure about the universe.”</p>
+          <p>rrthepogs@gmail.com</p>
+          <p><button class="button">Contact</button></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="column">
+      <div class="card">
+        <center><img src="ivy.jpeg" alt="Ivy Balangbang" style="width:47%; height: auto;"></center>
+        <div class="container">
+          <h2>Ivy Balangbang</h2>
+          <p class="title">Designer</p>
+          <p>“A room without books is like a body without a soul.”</p>
+          <p>eyebee@gmail.com</p>
+          <p><button class="button">Contact</button></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="column">
+      <div class="card">
+        <center><img src="mazelle.jpg" alt="Mazelle Lavin" style="width:48%; height: auto;"></center>
+        <div class="container">
+          <h2>Mazelle Lavin</h2>
+          <p class="title">Assistant Designer</p>
+          <p>“"A book is a dream that you hold in your hand."</p>
+          <p>itsmemazelle@gmail.com</p>
+          <p><button class="button">Contact</button></p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>

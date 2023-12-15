@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Store</title>
+</head>
+    <style>
+        .image-holder {
+            width: 16%; 
+            display: inline-block;
+            margin: 10px; 
+        }
+    
+        .image-holder img {
+            width: 100%;
+            height: auto; 
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            background-color: #333;
+            padding: 10px;
+        }
+
+        .navbar a {
+            color: white; 
+            text-decoration: none;
+            margin: 0 15px; 
+        }
+    </style>
+
+<nav class="navbar">
+    <div class="nav-right">
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="featured_products.html">Featured Products</a>
+        <a href="about.html">About Us</a>
+        <a href="login.html">Login</a>
+        <a href="register.html">Create Account</a>
+    </div>
+</nav>  
+<body>
+    <div class="section-2">
+        <h2>Featured Products</h2>
+        <div class="gallery">
+            <div class="image-holder">
+                <a href="#">
+                    <img src="f1.jpeg" alt="img-1">
+                </a>
+            </div>
+            <div class="image-holder">
+                <a href="#">
+                    <img src="f2.jpg" alt="img-2">
+                </a>
+            </div>
+            <div class="image-holder">
+                <a href="#">
+                    <img src="f3.jpg" alt="img-3">
+                </a>
+            </div>
+            <div class="image-holder">
+                <a href="#">
+                    <img src="f4.jpg" alt="img-4">
+                </a>
+            </div>
+            <div class="image-holder">
+                <a href="#">
+                    <img src="f5.jpg" alt="img-5">
+                </a>
+            </div>
+            <div class="image-holder">
+                <a href="#">
+                    <img src="f6.jpg" alt="img-3">
+                </a>
+            </div>
+            <div class="image-holder">
+                <a href="#">
+                    <img src="f7.jpg" alt="img-3">
+                </a>
+            </div>
+            <div class="image-holder">
+                <a href="#">
+                    <img src="f8.jpg" alt="img-3">
+                </a>
+            </div>
+            <div class="image-holder">
+                <a href="#">
+                    <img src="f9.jpeg" alt="img-3">
+                </a>
+            </div>
+            <div class="image-holder">
+                <a href="#">
+                    <img src="f10.jpeg" alt="img-3">
+                </a>
+            </div>
+
+    </div>
+
+    <script>
+        // Get the modal
+        var modal = document.getElementById('myModal');
+
+        // Get all images with class="image-holder"
+        var images = document.querySelectorAll('.image-holder img');
+t
+        var modalImg = document.getElementById("img01");
+r
+        images.forEach(function(image) {
+            image.addEventListener('click', function() {
+                modal.style.display = "block";
+                modalImg.src = this.src;
+            });
+        });
+
+        function closeModal() {
+            modal.style.display = "none";
+        }
+
+        window.onclick = function(event) {
+            if (event.target === modal) {
+                closeModal();
+            }
+        };
+    </script>
+    
+    <right> <a href="index.html" class="btn">Back <i class="fa fa-arrow-right" aria-hidden="true"></i> </a></right>
+    
+</body>
+</html>
